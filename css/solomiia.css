@@ -67,11 +67,12 @@ p {
 }
 
 .benefits div {
+  display: block;
   background-color: #8f888825;
   width: 200px;
   margin: 10px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   font-size: 15px;
   font-family: initial;
 }
@@ -83,8 +84,9 @@ p {
   background-color: rgba(150, 147, 135, 0.24);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .benefits {
+    display: block;
     flex-direction: column;
     align-items: center;
   }
@@ -98,4 +100,3 @@ p {
   .logo {
     margin-bottom: 0;
   }
-}
